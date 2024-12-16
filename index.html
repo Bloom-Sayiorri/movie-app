@@ -5,24 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css"/>
-
     <title>Movie App</title>
 </head>
 <body>
     <header>
         <h1 class="title">Movie App</h1>
-        <nav>
+        <form class="search" action="">
             <input 
                 type="search"
-                class="search"
+                class="search-box"
                 name=""
                 placeholder=""
                 onclick=""
             />
-            <i class="fa-solid fa-magnifying-glass search-btn"></i>
+            <button type="submit">
+                <i class="fa-solid fa-magnifying-glass search-btn"></i>
+            </button>
+        </form>
+        <nav>
             <a href="#" class="home">Home</a>
-            <a href="#genre" class="genre">Genre</a>
-            <a href="#/country" class="country">Country</a>
+            <a href="/genre" class="genre">Genre</a>
+            <a href="/country" class="country">Country</a>
             <a href="/about" class="about">About</a>
         </nav>
     </header>
@@ -35,12 +38,11 @@
 
         <div class="movie">
             <img src=".jpg" alt="Movie Image"/>
-            <h4 class="nme">Movie Name</h4>
+            <h4 class="name">Movie Name</h4>
             <section>
                 <p class="duration">Duration</p>
                 <p classs="rating">Rating</p>
             </section>
-
         </div>
     </main>
 
